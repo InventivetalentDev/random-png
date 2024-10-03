@@ -1,0 +1,59 @@
+{
+  "name": "random-png",
+  "version": "1.0.0",
+  "description": "Simple library to generate random PNG images using pngjs",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/cjs/index",
+  "scripts": {
+    "compile": "tsc -p tsconfig.json && tsc -p tsconfig.lib.json",
+    "build": "yarn run compile"
+  },
+  "keywords": [
+    "random png",
+    "png",
+    "image",
+    "random image",
+    "random"
+  ],
+  "author": {
+    "name": "Haylee Schäfer",
+    "email": "haylee@inventivetalent.org",
+    "url": "https://inventivetalent.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/InventivetalentDev/random-png"
+  },
+  "bugs": "https://github.com/InventivetalentDev/random-png/issues",
+  "funding": [
+    {
+      "type": "sponsors",
+      "url": "https://github.com/sponsors/InventivetalentDev"
+    }
+  ],
+  "license": "MIT",
+  "files": [
+    "/dist"
+  ],
+  "exports": {
+    ".": {
+      "require": {
+        "default": "./dist/cjs/index.js",
+        "types": "./dist/cjs/index.d.ts"
+      },
+      "import": {
+        "default": "./dist/esm/index.js",
+        "types": "./dist/esm/index.d.ts"
+      }
+    }
+  },
+  "packageManager": "yarn@4.5.0",
+  "devDependencies": {
+    "@types/pngjs": "^6.0.5",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "pngjs": "^7.0.0"
+  }
+}
